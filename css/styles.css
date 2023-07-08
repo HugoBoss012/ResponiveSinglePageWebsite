@@ -16,6 +16,8 @@
 
 :root{
   --main-color: #000000;
+  --bg: #FFFFFF;
+  --border: .1rem solid rgba(255,255,255);
 }
 
 *{
@@ -26,6 +28,42 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #FFFFFF;
+  border-radius: 5rem;
+}
+
+body{
+  background: var(--bg);
+}
+
+.header{
+ background: var(--bg);
+ display: flex;
+ align-items: center;
+ justify-content: space-between; 
+ padding: 1.5rem 7%;
+ border-bottom: var(--border);
+ position: fixed;
+ top: 0; left: 0; right: 0;
+ z-index: 1000;
 }
 
   h1 {
@@ -45,5 +83,7 @@
   }
 
   .header .navbar a{
-
+    	margin: 0 1rem;
+      font-size: 1.6rem;
+      color: #FFFFFF;
   }
