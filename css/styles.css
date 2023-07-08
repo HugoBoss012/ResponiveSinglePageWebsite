@@ -13,6 +13,21 @@
     src: url('fonts/medium.6b3922b30a82250a36276ac251398c3f.woff2') format('woff2');
   }
   
+
+:root{
+  --main-color: #000000;
+}
+
+*{
+  font-family: 'CustomFont1', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
   h1 {
     font-family: 'CustomFont1', Arial, sans-serif;
   }
@@ -23,4 +38,12 @@
 
   body {
     font-family: 'CustomFont3', Arial, sans-serif;
+  }
+
+  .header .logo img{
+    height: 6rem;
+  }
+
+  .header .navbar a{
+
   }
