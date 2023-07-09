@@ -85,5 +85,63 @@ body{
   .header .navbar a{
     	margin: 0 1rem;
       font-size: 1.6rem;
-      color: #FFFFFF;
+      color: #000000;
+      font-weight: bold;
   }
+
+  .header .navbar a:hover{
+    color: #1c1c1c;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    
+  }
+
+  .header .icons div{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+
+  .header .icons div:hover{
+    color: #1c1c1c;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+  }
+
+  #menu-btn{
+    display: none;
+  }
+
+  /* media queries*/
+  @media(max-width:991px){
+    html{
+      font-size: 55%;
+    }
+
+    .header{
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  @media(max-width:991px){
+    #menu-btn{
+      display: inline-block;
+    }
+
+    .header .navbar{
+      position: absolute;
+      top: 100%; right: -100%;
+      background: #FFFFFF;
+      width: 30rem;
+      height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar a{
+      display: block;
+      margin: 1.5rem;
+      padding: .5rem;
+      font-size: 2rem;
+    }
+  }
+
+
