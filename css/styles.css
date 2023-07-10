@@ -21,7 +21,7 @@
 }
 
 *{
-  font-family: 'CustomFont1', sans-serif;
+  font-family: 'CustomFont3', sans-serif;
   margin: 0; padding: 0;
   box-sizing: border-box;
   outline: none; border: none;
@@ -54,6 +54,10 @@ body{
   background: var(--bg);
 }
 
+section{
+  padding: 2rem 7%;
+}
+
 .header{
  background: var(--bg);
  display: flex;
@@ -78,6 +82,22 @@ body{
     font-family: 'CustomFont3', Arial, sans-serif;
   }
 
+  .home h3{
+    background-color: #e52e40;
+    color: #FFFFFF;
+    font-size: 3rem ;
+    margin-left: 15px; padding: 10px;
+    margin-right: 200px;
+  }
+
+  .home p{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 5rem ;
+    padding: 5px 20px 5px 5px;
+    font-weight: bold;
+  }
+
   .header .logo img{
     height: 6rem;
   }
@@ -87,6 +107,7 @@ body{
       font-size: 1.6rem;
       color: #000000;
       font-weight: bold;
+      padding: 0 60px 0 0;
   }
 
   .header .navbar a:hover{
@@ -108,6 +129,20 @@ body{
     padding-bottom: .5rem;
   }
 
+
+  .icons {
+    display: flex;
+  }
+  
+  .icons a {
+    margin-right: 10px;
+  }
+  
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+
   #menu-btn{
     display: none;
   }
@@ -120,6 +155,16 @@ body{
 
     .header{
       padding: 1.5rem 2rem;
+    }
+
+    section{
+      padding: 2rem;
+    }
+  }
+
+    @media(max-width:450px){
+    html{
+      font-size: 50%;
     }
   }
 
@@ -143,5 +188,12 @@ body{
       font-size: 2rem;
     }
   }
-
+ .home{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/luchtfoto-lbsp-2020-rgv-18bits-1920x-q80.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
 
