@@ -90,13 +90,26 @@ section{
     margin-right: 200px;
   }
 
-  .home p{
+  .home .content h2{
     background-color: #000000;
     color: #FFFFFF;
     font-size: 5rem ;
     padding: 5px 20px 5px 5px;
     font-weight: bold;
   }
+
+  .home p{
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 5rem;
+  font-weight: bold;
+  }
+
+
 
   .header .logo img{
     height: 6rem;
@@ -160,6 +173,21 @@ section{
     section{
       padding: 2rem;
     }
+
+    .home{
+      background-position: left;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .home .content h3{
+      font-size: 4.5rem;
+    }
+
+    .home .content p{
+      font-size: 1.5rem;
+    }
+    
   }
 
     @media(max-width:450px){
@@ -197,3 +225,79 @@ section{
   background-position: center;
  }
 
+ .whatOthersSay h1{
+  text-align: center;
+  color: #e52e40;
+  padding: 50px;
+  font-size: 1.5rem;
+ }
+
+ .tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.circle img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.corner-image {
+  position: absolute;
+  width: 100px; /* Adjust the width and height as per your requirements */
+  height: 100px;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.tile h3{
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+#para1{
+  color: #e52e40;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 0.7rem;
+}
+
+#para2{
+  color: #e52e40;
+  font-size: 1rem;
+  font-weight: 700;
+}
