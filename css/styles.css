@@ -247,7 +247,7 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .tile {
@@ -256,6 +256,7 @@ section{
   align-items: center;
   text-align: center;
   width: 300px;
+  height: 300px;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
@@ -328,7 +329,7 @@ section{
   text-align: left;
   padding-left: 6rem;
   padding-right: 14rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   border-left: 1px solid #e52e40;
 } 
 
@@ -341,8 +342,52 @@ ul {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.spanHeader {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.calDiv {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+
+
+.calendar-icon {
+  margin-right: 10px;
+}
+
+.event-text {
+  flex: 1;
+}
+
+.liDates{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  margin-top: 5px;
+  
+}
+
 #a1{
   color: #e52e40;
   font-size: 1rem;
   font-weight: 800;
 }
+
+.calendar-icon {
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
