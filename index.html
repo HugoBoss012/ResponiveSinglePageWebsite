@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tellus Quam</title>
+    <title>Risus Fringilla Ligula</title>
+    <link rel="icon" type="image/x-icon" href="/images/icons/logo.svg">
 
     <!--Custom css file link-->
     <link rel="stylesheet" href="css/styles.css">
+    
 
     
 
@@ -14,7 +16,6 @@
 <body>
     <!--Header section Starts-->
     <header class="header">
-
         <a href="#" class="logo">
             <img src="images/icons/logo.svg" alt="logo">
         </a>
@@ -34,6 +35,7 @@
             <a href="#"><img src="images/icons/linkedin.svg" alt="linkedin"></a>
             <a href="#"><img src="images/icons/youtube.svg" alt="youtube"></a>
         </div>
+        
 
 
 
@@ -50,7 +52,7 @@
             Integer posuere erat.</h2>
         </div>
         <div>
-            <p>Scroll to explore</p>
+            <p id="scrollText">Scroll to explore</p>
         </div>
         
     </section>
@@ -71,7 +73,6 @@
               <p id="para1">Joeri van den Steenhoven</p>
               <p id="para2">Venenatis Pellentesque Tellus Quam</p>
             </div>
-          
             <div class="tile">
               <div class="circle">
                 <img src="images/foto-hanemaaijer-280x280-crop-42-45-q80.jpg" alt="Person 2">
@@ -149,34 +150,17 @@
     
     <!--News and Events section Ends-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script>
+      function scrollToBottom() {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: 'smooth'
+        });
+      }
+  
+      var scrollText = document.getElementById("scrollText");
+      scrollText.addEventListener("click", scrollToBottom);
+    </script>
 
     <!--Custom js file link-->
     <script src="js/script.js"></script>
