@@ -225,11 +225,22 @@ section{
   background-position: center;
  }
 
+ 
+
  .whatOthersSay h1{
   text-align: center;
   color: #e52e40;
   padding: 50px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+ }
+
+ .news h1{
+  text-align: center;
+  color: #e52e40;
+  padding: 50px;
+  font-size: 1.1rem;
+  font-weight: 900;
  }
 
  .tile-container {
@@ -300,4 +311,38 @@ section{
   color: #e52e40;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.newsDiv{
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-left: 35rem;
+  padding-bottom: 5rem;
+  
+}
+
+.eventsDiv{
+  width: 50%;
+  float: right;
+  text-align: left;
+  padding-left: 6rem;
+  padding-right: 14rem;
+  padding-bottom: 5rem;
+  border-left: 1px solid #e52e40;
+} 
+
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  font-weight: 800;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#a1{
+  color: #e52e40;
+  font-size: 1rem;
+  font-weight: 800;
 }
