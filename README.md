@@ -1,4 +1,4 @@
-# WeAreJust
+
 Table of Contents
 Introduction
 Approach
